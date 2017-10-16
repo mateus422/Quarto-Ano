@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+div#div_principal{
+    background-color:blue;
+    
+    margin-top: 20%;
+    margin-left: 41%;
+    margin-right: 40%;
+    height: 200pt;
+    width: 300pt;
+    border-radius: 10pt;
+    
+}
+
+
+table{
+    font-size: 15pt;
+    border-bottom-color: black;
+    width: 95%;
+    margin-left: 5pt;
+}
+
+
+h1#titulo{
+    color: white;
+    text-align: center;
+    font-size: 40pt;
+    border-bottom: 2px solid #9C27B0;
+    padding-bottom: 5pt;
+    margin-bottom: 5pt;
+}
+
+h1#titulo:hover{
+    cursor: none;
+}
+
+
+td{
+    padding-bottom: 10pt;
+}
+
+td#usuario{
+    padding-left: 5pt;
+}
+
+td#usuario:hover{
+    transition: 2s;
+    background-color: white;
+    color: black;
+    cursor: help;
+}
+
+
+td#senha{
+    padding-left: 15pt;
+}
+
+td#senha:hover{
+    transition: 2s;
+    background-color: white;
+    color: black;
+    cursor:w-resize;
+}
+
+td#esqueceu{
+    font-size: 13pt;
+    float: right;
+    padding-right: 5pt;
+}
+
+
+td#esqueceu:hover{
+    transition: 2s;
+    color: #ffffff;
+    background: #6A1B9A;
+    border-radius: 6pt;
+    padding-bottom: 3pt;
+    cursor:zoom-in;
+}
+
+a#siteE{
+    text-decoration: none;
+}
+
+a#siteE:hover{
+    transition: 2s;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+td#cadastro{
+    font-size: 13pt;
+    float: left;
+    padding-right: 5pt;
+}
+
+td#cadastro:hover{
+    transition: 2s;
+    color: #ffffff;
+    background: #6A1B9A;
+    border-radius: 6pt;
+    padding-bottom: 3pt;
+    cursor:s-resize;
+}
+
+a#siteC{
+    text-decoration: none;
+}
+
+
+a#siteC:hover{
+    transition: 2s;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+input#lagurainput{
+    size:10pt;
+}
+
+input#botao{
+    text-align: center;
+    font-size: 15pt;
+    margin-left: 0pt;
+    margin-right: 3pt;
+    padding-right: 120pt;
+    padding-left: 120pt;
+    float: right;
+    border-radius: 8pt;
+    background: #E0E0E0;
+    color: #212121
+}
+
+input#botao:hover{
+    transition: 2s;
+    background-color: #BDBDBD;
+    color: #424242;
+}

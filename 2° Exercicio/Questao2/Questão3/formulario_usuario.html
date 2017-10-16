@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro de usuários</title>
+</head>
+<body>
+<form action="inserir_usuario.php" method="POST">
+	Nome:<br>
+	<input type="text" name="nome" placeholder="Nome"><br>
+	Matrícula:<br>
+	<input type="number" name="matricula" placeholder="Matrícula" minlength="1" maxlength="10"><br>
+	E-mail:<br>
+	<input type="email" name="email" placeholder="E-mail"><br>
+	Telefone:<br>
+	<input type="number" name="telefone" placeholder="Telefone" minlength="8" maxlength="11"><br>
+	Senha:<br>
+	<input type="password" name="senha" maxlength="32"><br>
+	<input type="submit" name="Enviar">
+</form>
+</body>
+</html>
