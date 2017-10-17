@@ -63,26 +63,6 @@ function criarTabela(){//cria a tabela
 	    echo $e->getMessage()."<br>";
 	}
 }
-
-
-function delete($nome){
-    $sql = "DELETE FROM TABELA WHERE nome = $nome";
-    $stmt = (banco).prepare($sql);
-    $stmt -> execute();
-    return $stmt -> fetch();
-    
-}
-
-function update($nome){
-    $sql = "UPDATE FROM TABELA WHERE nome = $nome";
-    $stmt = (banco).prepare($sql);
-    $stmt -> execute();
-    return $stmt -> fetch();
-    
-}
-
-
-
 function Cadastro(){
 	global $erro;
 	conectarBD();

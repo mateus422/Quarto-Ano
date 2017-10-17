@@ -7,7 +7,7 @@ $usuario = "root";
 $nomebd = "cadastroBD";
 $tabela= "CREATE TABLE Departamento (
 lotacao VARCHAR(25) NOT NULL,
-sigla VARCHAR(15) NOT NULL;
+sigla VARCHAR(15) NOT NULL
 )";
 $inserir ="INSERT INTO Departamento(lotacao,sigla) VALUES ('$lotacao','$sigla');"; 
 function conectarBD(){//conecta ao bd
@@ -22,11 +22,11 @@ function conectarBD(){//conecta ao bd
 	}
 }
 function criarBD(){//cria o bd caso ele não exista
-	global $nomebd, $servidor, $usuario,$erro,$sql;
+	global $nomebd, $servidor, $usuario,$erro;
 	try {
 		$conexao = new PDO("mysql:host=$servidor", $usuario);
 		$conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	    $sql = 'CREATE DATABASE FestaBD';
+	    $sql = 'CREATE DATABASE cadastroBD';
 	   	$conexao->exec($sql);
 	    echo "Banco de dados criado com sucesso!<br>";
 	    $erro=false;
@@ -59,22 +59,6 @@ function criarTabela(){//cria a tabela
 	}
 }
 
-function delete($nome){
-    $sql = "DELETE FROM TABELA WHERE nome = $nome";
-    $stmt = $conexao.prepare($sql);
-    $stmt -> execute();
-    return $stmt -> fetch();
-}
-
-function update($nome){
-    $sql = "UPDATE FROM TABELA WHERE nome = $nome";
-    $stmt = (banco).prepare($sql);
-    $stmt -> execute();
-    return $stmt -> fetch();
-    
-}
-
-
 
 function Cadastro(){
 	global $erro;
@@ -88,17 +72,6 @@ function Cadastro(){
 	inserirDados();
 	}
 }
-    function escolha (){
-        $delete = $_POST['delete'];
-        if($delete === "deletar"){
-            delete();
-            }
-        
-        if($delete === "deletar"){
-            delete();
-            }
-        
-        }
 Cadastro();
 $conexao=null;
 echo "<div> <button class='button' onClick=location.href='Cadastro.html'><span>Voltar ao início</span></button></div></body></html>";
