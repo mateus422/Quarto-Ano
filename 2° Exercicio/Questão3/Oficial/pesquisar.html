@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Pesquisa</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="padrao.css" type="text/css">
+</head>
+<body>
+<form action="pesquisar.php" method="POST">
+	Pesquisar por:<br>
+	<input type="radio" name="pesquisa" value="nome" checked>Nome<br>
+	<input type="radio" name="pesquisa" value="matricula">Matrícula<br>
+	<input type="radio" name="pesquisa" value="email">E-mail<br>
+	<input type="radio" name="pesquisa" value="telefone">Telefone<br>
+	<input type="radio" name="pesquisa" value="lotacao">Nome de departamento<br>
+	<input type="radio" name="pesquisa" value="sigla">Sigla do departamento<br><br>
+	Dado a ser pesquisado:<br>
+	<input type="search" name="dado" placeholder="Digite o que deseja buscar"><br>
+	<input type="submit" name="Enviar" class="button"><br>
+</form>
+<div> <button class='button' onClick=location.href='Cadastro.html'><span>Voltar ao início</span></button></div>
+<table></table>
+</body>
+</html>

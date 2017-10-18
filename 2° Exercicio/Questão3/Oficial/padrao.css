@@ -62,3 +62,7 @@ form{
 	left:50%;
 	float: center;
 }
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}

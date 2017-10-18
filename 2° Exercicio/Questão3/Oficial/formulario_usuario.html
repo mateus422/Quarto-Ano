@@ -7,7 +7,7 @@
 <body>
 <form action="inserir_usuario.php" method="POST">
 	Nome:<br>
-	<input type="text" name="nome" placeholder="Nome"><br>
+	<input type="text" name="nome" placeholder="Nome do usuário"><br>
 	Matrícula:<br>
 	<input type="number" name="matricula" placeholder="Matrícula" minlength="1" maxlength="10"><br>
 	E-mail:<br>
@@ -16,7 +16,10 @@
 	<input type="number" name="telefone" placeholder="Telefone" minlength="8" maxlength="11"><br>
 	Senha:<br>
 	<input type="password" name="senha" maxlength="32"><br>
-	<input type="submit" name="Enviar">
+    
+    <!-- <input type="hidden" name="id"> -->
+    
+	<input type="submit" value="Enviar">
 </form>
 </body>
 </html>
