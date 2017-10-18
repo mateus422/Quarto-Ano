@@ -14,7 +14,7 @@ if ($pesquisa == "lotacao"|| $pesquisa=="sigla") {
 	$tabela = "usuarios";
 	$primarykey = "matricula";
 }
-$sql="SELECT * FROM $tabela WHERE $pesquisa='$dado' ORDER BY matricula;";
+$sql="SELECT * FROM $tabela WHERE $pesquisa='$dado' ORDER BY $primarykey;";
 echo "<table>";
 try {
 	$conexao = new PDO("mysql:dbname=$nomebd;host=$servidor", $usuario,'');

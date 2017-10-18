@@ -37,7 +37,7 @@ function criarBD(){//cria o bd caso ele não exista
 	    echo "<p>Banco de dados criado com sucesso!</p><br>";
 	    $erro=false;
 	} catch(PDOException $e){
-	    die "<p>Erro ao criar: ".$e->getMessage()."<br>";
+	    echo "<p>Erro ao criar: ".$e->getMessage()."</p><br>";
 	}
 }
 function inserirDados(){//insere os dados
