@@ -97,7 +97,7 @@ print_r($_COOKIE);
 function principal($pagina){
 echo "<html>";
     
-    echo "Estou na pagina  ".$pagina."<>";
+    echo "Estou na pagina  ".$pagina."<br>";
 // Imprimir um cookie
 echo "<a href='setcookie.php?pagina=1'>Pagina 1</a> <br>
 	<a href='setcookie.php?pagina=2'>Pagina 2</a> <br>
