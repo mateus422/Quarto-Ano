@@ -1,0 +1,25 @@
+html e css:
+
+padrão tela all
+
+bd:
+
+tabela empresa Thiago
+tabela entregador Thiago
+tabela cliente Ellen
+tabela pedido Elen
+
+php:
+
+login empresa Hygor
+cadastrar entregador Ailla
+excluir entregador Hygor
+modificar entregador Mateus
+cadastrar pedido Ailla
+cancelar pedido Hygor
+
+entrar com código -> ver pedido Ellen
+ver entregador (modal) Thiago
+
+
+
