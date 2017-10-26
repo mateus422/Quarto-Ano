@@ -26,10 +26,12 @@ print_r($_COOKIE);
 
 function cookie1(){
    setcookie("paginas", "1", time()+3600);
-if ( !$_COOKIE["qtd1"] ){
+if ( !$_COOKIE["qtd1"] or !$_COOKIE["Contador"] ){
 	setcookie("qtd1", 0, time()+3600);
+    setcookie("Contador",0,time()+3600);
 }else{
 	setcookie("qtd1", $_COOKIE["qtd1"] + 1,time()+3600);
+    setcookie("Contador", $_COOKIE["Contador"] + $_COOKIE["qtd1"],time()+3600);
 }
 
 print_r($_COOKIE);
@@ -37,10 +39,13 @@ print_r($_COOKIE);
 
 function cookie2(){
     setcookie("paginas", "2", time()+3600);
-if ( !$_COOKIE["qtd2"] ){
+    
+if ( !$_COOKIE["qtd2"] or !$_COOKIE["Contador"] ){
 	setcookie("qtd2", 0, time()+3600);
+    setcookie("Contador",0,time()+3600);
 }else{
 	setcookie("qtd2", $_COOKIE["qtd2"] + 1,time()+3600);
+    setcookie("Contador", $_COOKIE["Contador"] + $_COOKIE["qtd2"],time()+3600);
 }
     
 print_r($_COOKIE);
@@ -52,6 +57,7 @@ if ( !$_COOKIE["qtd3"] ){
 	setcookie("qtd3", 0, time()+3600);
 }else{
 	setcookie("qtd3", $_COOKIE["qtd3"] + 1,time()+3600);
+    setcookie("Contador", $_COOKIE["Contador"] + $_COOKIE["qtd3"],time()+3600);
 }
     
 
@@ -64,6 +70,7 @@ if ( !$_COOKIE["qtd4"] ){
 	setcookie("qtd4", 0, time()+3600);
 }else{
 	setcookie("qtd4", $_COOKIE["qtd4"] + 1,time()+3600);
+    setcookie("Contador", $_COOKIE["Contador"] + $_COOKIE["qtd4"],time()+3600);
 }
     
 
@@ -76,6 +83,7 @@ if ( !$_COOKIE["qtd5"] ){
 	setcookie("qtd5", 0, time()+3600);
 }else{
 	setcookie("qtd5", $_COOKIE["qtd5"] + 1,time()+3600);
+    setcookie("Contador", $_COOKIE["Contador"] + $_COOKIE["qtd5"],time()+3600);
 }
     
 
@@ -88,6 +96,7 @@ if ( !$_COOKIE["qtd6"] ){
 	setcookie("qtd6", 0, time()+3600);
 }else{
 	setcookie("qtd6", $_COOKIE["qtd6"] + 1,time()+3600);
+    setcookie("Contador", $_COOKIE["Contador"] + $_COOKIE["qtd6"],time()+3600);
 }
     
 
@@ -108,6 +117,7 @@ echo "<a href='setcookie.php?pagina=1'>Pagina 1</a> <br>
 	";
 
 echo "<hr/>";
+    echo "</html>";
 }
 
 
